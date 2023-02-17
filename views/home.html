@@ -1,60 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/439c181295.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/colors.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/mediaQueryStyle.css" rel="stylesheet">
     <title>Mercado Liebre</title>
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/iconos.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
     <header class="header">
-        <div class="logo">
-            <img src="/images/logo-mercado-liebre.svg" >
+
+        <div class="logo-container">
+            <div class="logo-bar-container">
+                <div class="logo">
+                    <a href="/"><img src="/images/logo-mercado-liebre.svg" alt="logo"></a>
+                </div>
+                <div class="search-button-container">
+                    <div class="search-container">
+                        <input type="text" placeholder="Buscar producto, marcas...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="card-container">
+                <h2 class="card-title"><i class="fas fa-hand-holding-usd">Comprá en cuotas y sin tarjeta de crédito.</i></h2>
+            </div>
         </div>
-        
-        <div class="busqueda">
-            <input id="buscar" type="text" placeholder="Buscar....">
-            <button type="submit">Buscar</button>
-        </div>
-        
-        <div class="icono">
-            <i class="fa fa-search"></i>
-        </div>
-        
-        <div class="tipoCompra">
-            <p><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
-        </div>
-        
-        <nav class="navbar">
+
+        <nav class="menu-container">
             <ul>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Tiendas Oficiales</a></li>
-                <li><a href="#">Vender</a></li>
-                <li><a href="#">Ayuda</a></li>
-                <br>
-                <li><a href="/register">Creá tu cuenta</a><i class="fa-solid fa-address-card"></i></li>
-                <li><a href="/login">Ingresá</a><i class="fa-solid fa-right-to-bracket"></i></i></li>
-                <li><a href="#">Mis compras</a><i class="fa-solid fa-basket-shopping"></i></li>
+                <li>Ofertas</li>
+                <li>Tiendas Oficiales</li>
+                <li>Vender</li>
+                <li>Ayuda</li>
+            </ul>
+            <ul>
+                <li><a href="/register">Creá tu cuenta<i class="fas fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
+                <li>Mis compras<i class="fas fa-shopping-basket"></i></li>
             </ul>
         </nav>
-        <div class="burger-menu">
-            <i class="fas fa-bars fa-2x"></i>
+
+        <div class="burger-container">
+            <div class="burger-menu">
+                <i class="fas fa-bars fa-2x"></i>
+            </div>
+            
         </div>
     </header>
-   
+
     <main>
         <section>
             <img src="/images/img-home-banner.jpg" width="360" alt="Banner de ofertas">
         </section>
-        <section>
+        <section class="ultimavisita">
             <h3>Basado en tu última visita</h3>
             <img src="/images/img-cafetera-moulinex.jpg" width="360" alt="Cafetera" class="product_img">
             <!--iconito de camión-->
@@ -78,7 +86,7 @@
             <p>5% off</p>
             <h4>SmartTv Samsung 43"</h4>
         </section>
-        <section>
+        <section class="ofertas">
             <h3>Ofertas</h3>
             <img src="/images/img-cafetera-moulinex.jpg" width="360" alt="Cafetera" class="product_img">
             <!--iconito de camión-->
@@ -103,30 +111,31 @@
             <h4>SmartTv Samsung 43"</h4>
         </section>
     </main>
-    
+
     <footer>
         <div class="piePagina">
-        <div>
-            <h3>Pagá con tarjeta o en efectivo</h3>
-            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es
-                seguro!</p>
+            <div>
+                <h3>Pagá con tarjeta o en efectivo</h3>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y
+                    siempre es
+                    seguro!</p>
+            </div>
+            <div>
+                <h3>Envío gratis desde $ 2.500</h3>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un
+                    beneficio de
+                    Mercado Puntos.</p>
+            </div>
+            <div>
+                <h3>Seguridad, de principio a fin</h3>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre
+                    protegid@.</p>
+            </div>
+            <div class="derechoAutor">
+                <p>Copyright © 1999-2023 MercadoLiebre S.R.L.</p>
+            </div>
         </div>
-        <div>
-            <h3>Envío gratis desde $ 2.500</h3>
-            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de
-                Mercado Puntos.</p>
-        </div>
-        <div>
-            <h3>Seguridad, de principio a fin</h3>
-            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre
-                protegid@.</p>
-        </div>
-        <div class="derechoAutor">
-            <p>Copyright © 1999-2023 MercadoLiebre S.R.L.</p>
-        </div>
-    </div>
     </footer>
 </body>
 
 </html>
-
