@@ -1,11 +1,84 @@
+/* Tablet */
 @media (min-width: 768px) {
+  .logo-container {
+    flex-direction: row;
+  }
+  .logo-bar-container {
+    width: 66vw;
+  }
+
+  .logo {
+    width: 50vw;
+    padding: 4vh 1vh 4vh 6vh;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .serch-button-container {
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-container {
+    display: flex;
+    width: 33vw;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-title {
+    font-size: 12px;
+  }
+
+  .burger-container {
+    display: none;
+  }
+
+  .menu-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 4vh 2vh 4vh;
+  }
+
+  ul {
+    display: flex;
+    width: 38%;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+
+  ul a i {
+    padding: 3px;
+  }
+
+  li i {
+    padding: 3px;
+  }
+
+  input {
+    width: 95%;
+    height: 4vh;
+    border: none;
+    background-color: var(--blanco);
+    border-radius: 5px 0 0 5px;
+  }
+
+  button {
+    width: 15%;
+    padding: 1px;
+    border: none;
+    background-color: var(--blanco);
+    border-radius: 0 5px 5px 0;
+    height: 4vh;
+  }
 
 }
-
+/* Desktop */
 @media (min-width: 1024px) {
-    
 }
-
+/* Tv */
 @media (min-width: 1200px) {
-    
 }

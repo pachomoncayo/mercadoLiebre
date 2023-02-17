@@ -26,78 +26,89 @@ html {
 }
 /* ***Header*** */
 header {
-    background-color: var(--amarillo);
-    display: flex;
-    flex-direction: column;
-
+  background-color: var(--amarillo);
+  display: flex;
+  flex-direction: column;
 }
+
 .logo-container {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .menu-container {
-    display: none;
-
+  display: none;
 }
 .burger-container {
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 86px;
 }
 
 .logo-bar-container {
-display: flex;
+  display: flex;
 }
 
 .card-container {
-padding: 15px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
 }
 
 .logo {
-width: 50%;
-padding: 10px;
+  width: 50%;
+  padding: 4vh 1vh 4vh 6vh;
+  height: 20vh;
+  display: flex;
+  align-items: center;
 }
 
 .search-button-container {
-display: flex;
-width: 50%;
-justify-content: center;
-align-items: center;
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
 }
 
 .search-container {
-display: flex;
-width: 90%;
-height: 25px;
+  display: flex;
+  width: 90%;
+  height: 25px;
 }
 
 .card-title {
-    font-weight: 400;
-    text-align: center;
-    font-family: "Roboto";
-
-}
-
-.card-title i {
-    margin-right: 10px;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 400;
 }
 
 input {
-    width: 95%;
-    border: none;
-    background-color: var(--blanco);
-    border-radius: 5px 0 0 5px;
+  width: 95%;
+  height: 6vh;
+  border: none;
+  background-color: var(--blanco);
+  border-radius: 5px 0 0 5px;
 }
 
 button {
-    width: 15%;
-    padding: 1px;
-    border: none;
-    background-color: var(--blanco);
-    border-radius: 0 5px 5px 0;
+  width: 15%;
+  padding: 1px;
+  border: none;
+  background-color: var(--blanco);
+  border-radius: 0 5px 5px 0;
+  height: 6vh;
 }
 
 .burger-menu {
-    
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px;
+  border-radius: 5px;
+  color: var(--blanco);
+  background-color: var(--celeste);
 }
 
 /* ***Fin header*** */
