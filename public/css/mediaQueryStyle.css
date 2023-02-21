@@ -1,5 +1,5 @@
 /* Tablet */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .logo-container {
     flex-direction: row;
   }

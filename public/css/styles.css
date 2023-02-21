@@ -1,3 +1,4 @@
+/* ***** Reset general ***** */
 * {
   padding: 0;
   margin: 0;
@@ -23,6 +24,10 @@ img {
 
 html {
   font-family: "Roboto", sans-serif;
+}
+
+h3 {
+  color: var(--grisOscuro);
 }
 /* ***Header*** */
 header {
@@ -112,3 +117,44 @@ button {
 }
 
 /* ***Fin header*** */
+
+/* ***Inicio footer*** */
+
+.footer_container {
+  background-color: var(--blanco);
+}
+
+.pago_tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.evio_gratis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seguridad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.derechos_autor {
+  padding: 10vh 0 6vh 7vw;
+  color: var(--grisOscuro);
+}
+
+#icono_footer {
+  width: 10vw;
+  margin-top: 10vh;
+  margin-bottom: 2vh;
+}
+
+#parrafo_footer {
+  text-align: center;
+  padding: 0 15vw 0 15vw;
+  color: var(--grisOscuro);
+}
