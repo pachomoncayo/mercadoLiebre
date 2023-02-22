@@ -117,6 +117,82 @@ button {
 }
 
 /* ***Fin header*** */
+/* ***Productos*** */
+main h3 {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  text-align: center;
+}
+
+.ultimavisita,
+.ofertas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ultimavisita .productos {
+  width: 95%;
+}
+
+.productos article {
+  background: var(--blanco);
+  padding: 2vh 0;
+}
+
+.articuloPrincipal {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 2vw;
+  border-top: 1px solid var(--grisClaro);
+}
+
+.productos article i {
+  color: var(--verde);
+  border: 1px solid var(--verde);
+  background: var(--blanco);
+  border-radius: 50%;
+  padding: 5px;
+  position: absolute;
+  top: -15px;
+  right: 20px;
+  width: 35px;
+  height: 35px;
+}
+
+.precio {
+  font-size: 16px;
+  width: 30%;
+  padding: 0 0 0 3vw;
+}
+
+.descuento {
+  width: 70%;
+  color: var(--verde);
+}
+
+.descuento,
+.descripcion {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+article {
+  margin-bottom: 3vh;
+}
+
+.ofertas .productos {
+  width: 95%;
+}
+
+main section div.productos article i {
+  transition: transform 1s;
+}
+
+main section div.productos article:hover i {
+  transform: rotate(-90deg);
+}
 
 /* ***Inicio footer*** */
 
